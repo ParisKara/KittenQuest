@@ -4,3 +4,28 @@
   border-color: black;
   border-width: 0.15rem;
 }
+
+.map-image {
+  background-color: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 8px;
+  width: 476px;
+  height: 416px;
+}
+
+textarea {
+  resize: none;
+}
+
+.col-form-label {
+  font-size: small;
+  font-weight: 900;
+}
+
+p {
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: 900;
+}

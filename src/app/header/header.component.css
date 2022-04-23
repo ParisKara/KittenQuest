@@ -1,7 +1,12 @@
 a {
   font-size: 15px;
+  color: #555555 !important;
   margin-top: 0;
   padding-top: 0.5%;
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+.border-bottom {
+  border-color: #A0A9BA !important;
 }

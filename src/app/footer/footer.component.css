@@ -2,7 +2,13 @@
   background-color: black !important;
 }
 
-a {
-  font-size: 12px;
-  color: gray;
+.footerText {
+  font-size: small;
+  color: #FFFFFF !important;
+}
+
+i {
+  color: #FFFFFF !important;
+
+  font-size: 1rem;
 }
