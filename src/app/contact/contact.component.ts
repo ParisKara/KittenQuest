@@ -24,6 +24,15 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.sendEmailForm.value);
+    //console.log(this.sendEmailForm.value);
+    if (this.sendEmailForm.valid) {
+      const formData = new FormData();
+      const { value } = this.sendEmailForm;
+      for (const key in value) {
+        formData.append(key, value[key]);
+      }
+
+      this.contact.sendForm(formData);
+    }
   }
 }

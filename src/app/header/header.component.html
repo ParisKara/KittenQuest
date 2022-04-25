@@ -4,7 +4,7 @@
     <button class="navbar-toggler" type="button" (click)="onDropdown()">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end px-lg-0 px-4" #dropdown>
+    <div class="collapse navbar-collapse justify-content-end px-lg-0 px-4" [ngClass]="{show: isOpen}">
       <div class="navbar-nav gap-4">
         <a></a>
         <a class="nav-link fw-bold" href="#">Adopt Kittens</a>
