@@ -5,12 +5,16 @@
   border-width: 0.15rem;
 }
 
-.map-image {
-  background-color: #FFFFFF;
-  border: 1px solid #CCCCCC;
-  border-radius: 8px;
+.map-size {
   width: 476px;
   height: 416px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 992px){
+  .map-size {
+      width: 1000px;
+  }
 }
 
 textarea {
