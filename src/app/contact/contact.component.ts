@@ -26,13 +26,16 @@ export class ContactComponent implements OnInit {
   onSubmit() {
     //console.log(this.sendEmailForm.value);
     if (this.sendEmailForm.valid) {
+      /* pass the data from the reactive form to
+        a FormData instance, and then send it to
+        the formsubmit.co form endpoint */
       const formData = new FormData();
       const { value } = this.sendEmailForm;
       for (const key in value) {
         formData.append(key, value[key]);
       }
 
-      this.contact.sendForm(formData);
+      this.contact.sendEmail(formData);
     }
   }
 }

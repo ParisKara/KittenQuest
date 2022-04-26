@@ -7,10 +7,10 @@ import { Injectable } from '@angular/core';
 export class ContactService {
   constructor(private http: HttpClient) {}
 
-  sendForm(formData) {
+  sendEmail(formData: any) {
     //console.log('Form Data:', formData);
     this.http
-      .post('https://formsubmit.io/send/putEmailHere', formData)
+      .post('https://formsubmit.co/ead4afc9b17ed0b84d81d6d11017e922', formData)
       .subscribe(
         (response) => console.log('Response:', response),
         (error) => console.log('Error:', error)
