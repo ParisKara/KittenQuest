@@ -10,7 +10,7 @@ export class ContactService {
   sendEmail(formData: any) {
     //console.log('Form Data:', formData);
     this.http
-      .post('https://formsubmit.co/ead4afc9b17ed0b84d81d6d11017e922', formData)
+      .post('https://formsubmit.co/emailPlaceholder', formData)
       .subscribe(
         (response) => console.log('Response:', response),
         (error) => console.log('Error:', error)
